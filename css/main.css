@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+    O "em" é uma unidade de medida, acredito que seria interessante definir uma no seletor de body assim ficaria melhor para assimilar
+    Ou pode utilizar o padrão e ir multiplicando linha a linha por utilização da mesma.
+
+
+    -- Vamos começar pelo responsivo voltado para Iphone (Para me encontrar)
+
+*/
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, blockquote{
+    font-size: .9em;/*Sou mais afavor da unidade de medida "rem", o "em" multiplica "por vezes" pela fonte padrão do navegador que é "16px"*/
+    line-height: 1.6em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.logo{
+    width: 130px; /*"px" ou Pixel é um unidade de medida que não altera dependendo da dimensão da tela*/
+}
+
+.hide-mobile{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 25px;
+    margin-top: 45%;
+}
+
+.server{
+    width: 70%;
+    margin: 2em auto 2em 25%;
+}
+
+h1, .subhead{
+    position: relative; /*Relativo a outro elemento*/
+    z-index: 3;
+}
+
+.subhead{
+    font-size: 1.1em;
+}
+
+.blue-container{
+    width: 100%;
+    background: #00C2FF;
+    color: #fff;
+    margin-top: 15%;
+    padding: 4em 0 2em;
+
+    border-top-left-radius: 40px; /*Radius para lado esquerdo somente*/
+    transform: skewY(-2deg); /*Altera o grau do elemento, nesse caso negativo*/
+}
+
+.blue-container:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: #00C2FF;
+    position: absolute; /*Pode se mover em todo o documento*/
+    top: -39px;
+    right: 0;
+
+    z-index: -2;
+}
+
+.blue-container:after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: #fff;    
+    position: absolute;
+    top: -80px;
+    right: 0;
+
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.blue-container ul{
+    transform: skewY(2deg); /*Altera o grau do elemento, neutraliza o valor anterior só focado nos itens dentro do "Ul"*/
+}
+
+.blue-container ul li{
+    margin-bottom: 3em;
+}
+
+.blue-container ul li p{
+    padding: 0 .5em;
+}
+
+.blue-container img{
+    width: 14%;
+}
+
+.blue-container ul li:nth-child(3) img{/*Seleciona especificamente, nesse caso o terçeiro "li" elemento*/
+    width: 8%;
+}
+
+.gray-container{
+    background: #F6F6F6;
+    padding: 4em 0 2em;
+    margin-top: -3%; 
+}
+
+.gray-container ul li:frist-child{/*Seleciona o primeiro elemento que aparece dentro do seletor*/
+    margin-bottom: 2em;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+figcaption{
+    font-weight: bold;
+    color: #00C2FF;
+}

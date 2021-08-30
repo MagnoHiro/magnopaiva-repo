@@ -9,24 +9,6 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <title>Frontend - Crash Course</title>
 
-        <script>
-
-            var menu = document.getElementById('menu');//pega o "id" do elemento
-            var nav = document.getElementById('nav');
-            var exit = document.getElementById('exit');
-
-            menu.addEventListener('click', function(e) {//Ao clicar executa alguma coisa abaixo
-                nav.classList.toggle('hide-mobile');
-                e.preventDefault();
-            });
-
-            exit.addEventListener('click', function(e) {//Ao clicar executa alguma coisa abaixo
-                nav.classList.add('hide-mobile');
-                e.preventDefault();
-            });
-
-
-        </script>
 
     </head>
 
@@ -184,6 +166,25 @@
             </div>
 
         </footer>
+
+        <script>
+
+            var menu = document.getElementById('menu');//pega o "id" do elemento
+            var nav = document.getElementById('nav');
+            var exit = document.getElementById('exit');
+
+            menu.addEventListener('click', function(e) {//Ao clicar executa alguma coisa abaixo
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            });
+
+            exit.addEventListener('click', function(e) {//Ao clicar executa alguma coisa abaixo
+                nav.classList.add('hide-mobile');
+                e.preventDefault();
+            });
+
+
+        </script>
 
     </body>
 

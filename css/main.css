@@ -375,6 +375,24 @@ nav ul li a:hover{
 
 @media only screen and (min-width: 1600px) {
 
-    
+    .server {
+        width: 40%;
+        margin: 5em auto 4em 15%;
+    }
 
+    .container {
+        width: 70%;
+    }
+
+    .blue-container {
+        padding: 7em 0 2em;
+    }
+
+    .blue-container ul li p {
+        font-size: 1.3em;
+    }
+
+    .gray-container {
+        padding: 6em 0 4em;
+    }
 }
